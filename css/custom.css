@@ -1,0 +1,72 @@
+.slide.blueSlide {
+    background: #1B224B;
+}
+.container .alignBottom {
+    display: table-cell;
+    vertical-align: bottom;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.margin-bottom-em {
+    margin-bottom: 3em;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 992px) {
+    .slide.homeBackground {
+        background-color: #1B224B;
+        background-image: url("../assets/img/movileBack.png");
+        background-repeat: no-repeat;
+        background-position: top 10% center;
+        background-size: 60% auto;
+    }
+    .gradient {
+        background-image: linear-gradient(to bottom, #1B224B, #1B224B 40%, #C93073 40%);
+      }
+    .topLogo {
+        width: 170px;
+        height: 50px;
+    }
+    .container .alignBottom {
+        display: table-cell;
+        vertical-align: bottom;
+        overflow: hidden;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 992px) {
+    .slide.homeBackground {
+        background-color: #1B224B;
+        background-image: url("../assets/img/backHome.png");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: top center;
+    }
+    .gradient {
+        background-image: linear-gradient(to bottom, #1B224B, #1B224B 60%, #C93073 60%);
+      }
+    .topLogo {
+        height: 100px;
+    }
+    .container .alignBottom {
+        display: table-cell;
+        vertical-align: bottom;
+        overflow: hidden;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.yellowText {
+    color: #FAD151 !important;
+}
+
+.violetText {
+    color: #A738F6 !important;
+}
