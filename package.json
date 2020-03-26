@@ -1,0 +1,29 @@
+{
+  "name": "home-d2fc19",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel -p 9090 public/index.html",
+    "build": "parcel build public/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bichotll/Home-D2FC19.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bichotll/Home-D2FC19/issues"
+  },
+  "homepage": "https://github.com/bichotll/Home-D2FC19#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.3"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "ev-emitter": "^1.1.1"
+  }
+}
