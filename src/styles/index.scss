@@ -1,0 +1,180 @@
+$fa-font-path: './../../vendor/fontawesome-free-5.13.0-web/webfonts';
+
+@import './config/index';
+@import './config/bootstrap';
+
+// @import "./../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./../../vendor/fontawesome-free-5.13.0-web/scss/fontawesome.scss";
+@import "./../../vendor/fontawesome-free-5.13.0-web/scss/solid.scss";
+@import "./../../vendor/fontawesome-free-5.13.0-web/scss/brands.scss";
+
+
+@import "./helpers";
+
+$secondBckColor: #C93073;
+$sanitarioColor: #FBD052;
+$disenadorColor: #61D6C6;
+
+.sanitario {
+  color: $sanitarioColor;
+}
+
+.disenador {
+  color: $disenadorColor;
+}
+
+header {
+  .logo {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+    color: white;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 22px;
+    }
+  }
+
+  nav {
+    position: relative;
+    left: -50px;
+
+    .nav-content {
+     position: absolute; 
+    }
+
+    .nav-link {
+      color: white;
+      font-size: 30px;
+    }
+  }
+}
+
+.cover {
+  .hero-img {
+    position: relative;
+    // top: -60px;
+    // margin-bottom: -90px;
+    margin-top: -5%;
+    // margin-bottom: -3%;
+    width: 80%;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 4%;
+      margin-bottom: 5%;
+      // margin-bottom: -2%;
+      width: 80%;
+    }
+  }
+}
+
+.main-msg {
+  background-color: $secondBckColor;
+  text-align: left;
+
+  .buttons-container {
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
+
+    .button {
+      display: block;
+      padding: 10px;
+      margin-bottom: 7px;
+      border-radius: 5px;
+      background-color: rgba($color: #ffffff, $alpha: 0.2);
+      color: white;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  h5 {
+    padding-top: 0;
+  }
+}
+
+.help {
+  a {
+    display: block;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.banco-microproyectos {
+  .title {
+    background-image: url("../../assets/img/banc.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+    border-color: white;
+    width: 600px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project {
+    height: 180px;
+    width: 180px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+
+    img {
+      position: absolute;
+      height: 180px;
+      width: 180px;
+      border-radius: 5px;
+      opacity: 0.8;
+    }
+
+    .project-content {
+      position: absolute;
+      text-align: center;
+      height: 180px;
+      width: 180px;
+      display: flex;
+      align-items: center;
+
+      .project-text {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.help {
+  background-color: $secondBckColor;
+}
+
+.questions {
+  .question {
+    margin: 15px;
+
+    h4 {
+      display: inline-block;
+      padding: 7px 8px;
+      background-color: rgba(255, 255, 255, 0.25);
+      border-radius: 20px;
+      position: relative;
+      left: -8px;
+    }
+
+    p, ul {
+      padding-top: 10px;
+    }
+
+    li {
+      font-size: 20px;
+    }
+  }
+}
