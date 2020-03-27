@@ -202,6 +202,9 @@ header {
 
   .note {
     width: 50%;
+    @include media-breakpoint-down(sm) {
+      width: 90%;
+    }
   }
 }
 

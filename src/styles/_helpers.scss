@@ -28,3 +28,10 @@
 .fs-9 {
   font-size: 90%;
 }
+
+.img-3 {
+  width: 40%;
+  @include media-breakpoint-down(sm) {
+    width: 80%;
+  }
+}
