@@ -14,6 +14,7 @@ $fa-font-path: './../../vendor/fontawesome-free-5.13.0-web/webfonts';
 $secondBckColor: #C93073;
 $sanitarioColor: #FBD052;
 $disenadorColor: #61D6C6;
+$default-dark-color: #000;
 
 .sanitario {
   color: $sanitarioColor;
@@ -21,6 +22,10 @@ $disenadorColor: #61D6C6;
 
 .disenador {
   color: $disenadorColor;
+}
+
+a {
+  color: $sanitarioColor;
 }
 
 header {
@@ -45,7 +50,23 @@ header {
 
     .nav-link {
       color: white;
-      font-size: 30px;
+      font-size: 26px;
+    }
+
+    .dropdownTrigger[data-dropdown-id="language"] {
+      color:#fff;
+      text-align:center;
+      font-size:16px;
+      line-height:1.35;
+      font-weight:600;
+      text-transform:uppercase;
+    }
+    .dropdown-menu {
+      background-color: rgba(255, 255, 255, 0.4);
+      padding: 10px;
+      margin-right: 5px;
+      max-width: 100% !important;
+      min-width: 100% !important;
     }
   }
 }
