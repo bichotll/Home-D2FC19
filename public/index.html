@@ -26,7 +26,7 @@
   <meta name="twitter:title" content="Design2FightCOVID19" />
   <meta name="twitter:description"
   content="Los diseñadores nos ponemos al servicio directo de los que actualmente dirigen realmente esta lucha singular: enfermeras, médicos, y otros profesionales y gestores que trabajan en los hospitales, sociosanitarios y centros de atención primaria, que se están dejando la piel y arriesgando la vida." />
-  <meta name="twitter:image" content="../assets/img/movileBack.png"/>
+  <meta name="twitter:image" content="../assets/img/homeTW.png"/>
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   
 
@@ -664,6 +664,39 @@
     </small>
   </div>
   <script src="../src/js/index.js" type="text/javascript"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+    //set or get lang
+    $('body').attr('data-current-lang','es');
+    
+    $('[data-switch-lang]').click(function(){
+      
+      var newLang = $(this).attr('data-switch-lang'),
+          currentLang = $('body').attr('data-current-lang');
+      
+      if (newLang !== currentLang){
+        
+        //swap content
+        $('[data-lang="' + newLang + '"]').show();
+        $('[data-lang="' + $('body').attr('data-current-lang') + '"]').hide();
+        
+        //set language for future needs
+        $('body').attr('data-current-lang',newLang);
+        
+        //optional
+        $('.dropdownTrigger[data-dropdown-id="language"]').text(newLang);
+        
+        //Recalculate panels and equal elements
+        $(window).resize();
+      }
+    });
+  });
+  </script>
+  
 </body>
 
 
