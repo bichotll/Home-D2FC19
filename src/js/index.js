@@ -1,7 +1,6 @@
 import './../styles/index.scss';
 require('bootstrap');
-var jquery = require("jquery");
-window.$ = window.jQuery = jquery;
+window.$ = require('jquery');
 
 $(function(){
     //set or get lang
