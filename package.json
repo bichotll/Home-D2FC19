@@ -24,6 +24,8 @@
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "ev-emitter": "^1.1.1"
+    "ev-emitter": "^1.1.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
   }
 }
