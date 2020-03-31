@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel -p 9090 public/index.html",
+    "start": "parcel -p 9090 public/*.html",
     "build": "parcel build public/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
